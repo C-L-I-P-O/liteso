@@ -1,0 +1,372 @@
+:root{
+    --bg-color: #fff;
+    --text-color: #000;
+    --second-bg-color: #f1f1f1;
+    --main-color: #00ffaa;
+    --main-hover-color: #00c784;
+    --main-font: maiandra gd;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);    
+}
+
+/* navbar starts from here */
+
+header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-self: start;
+    background: var(--bg-color);
+}
+
+.logo{
+    color: var(--text-color);
+    margin: 40px 0 0 15%;
+    font-family: var(--main-font);
+    font-size: 170%;
+}
+
+.logo span{
+    color: var(--main-color);
+}
+.navbar{
+    display: flex;
+    margin: 40px 15% 0 0;
+    /* word-spacing: 300px; */
+    cursor: default;
+    margin-bottom: 40px;
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-size: 170%;
+    font-family: calibri;
+    text-decoration: none;
+    font-weight: lighter;
+    transition: all 0.3s;
+    font-weight: 500;
+    margin-right: 10%;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+}
+
+/* navbar ends */
+
+div#top{
+    height: 100px;
+}
+
+.head-section{
+    text-align: center;
+}
+
+@keyframes heading {
+    0%{
+        letter-spacing: 0;
+        text-shadow: none;
+    }
+    100%{
+        letter-spacing: 1px;
+        text-shadow: 5px 5px 0px var(--main-color);
+    }
+}
+
+.head-section h1{
+    color: var(--text-color);
+    font-size: 100px;
+    margin-top: 7%;
+    font-family: var(--main-font);
+    animation: heading 1s alternate linear infinite;
+}
+
+.head-section h1 span{
+    color: var(--main-color);
+}
+
+.search-bar input{
+    color: var(--text-color);
+    width: 30%;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 25px;
+    outline: none;
+    background: var(--second-bg-color);
+    border: none;
+    border-radius: 30px;
+    margin-top: 3%;
+    min-width: 200px;
+    position: relative;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;/
+}
+
+.search-bar input::placeholder{
+    font-family: calibri;
+}
+
+@keyframes btnanim{
+    from{
+        text-shadow: 5px 0px var(--main-color);
+    }
+    to{
+        text-shadow: -5px 0px var(--main-color);
+    }
+}
+
+.search-bar button{
+    width: 5%;
+    min-width: 50px;
+    padding: 10px;
+    padding-top: 6px;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    margin-top: 3%;
+    background: var(--main-color);
+    transition: all 0.3s;
+    position: relative;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.head-section button:hover{
+    transform: translateX(-5px);
+}
+
+.head-section button:active{
+    transform: none;
+}
+
+
+/* main section starts here */
+
+
+.song-container{
+    display: flex;
+    width: 60%;
+    margin: 70px 23%;
+}
+
+#songs{
+    display: block;
+    gap: 20px;
+    text-align: center;
+    list-style-type: none;
+}
+
+#songs a{
+    width: 320px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 10px 1px var(--main-color);
+    animation: btnanim 1s alternate linear infinite;
+    background: #efefef;
+    z-index: 100000000;
+    margin-left: 30px;
+}
+
+#songs a:hover{
+    box-shadow: 0 0 20px var(--main-color);
+    background: var(--main-color);
+}
+
+.ser{
+    position: fixed;
+    background: var(--main-color);
+    border: none;
+    font-size: 30px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-top: 600px;
+    margin-left: 83%;
+    transition: all 0.3s;
+}
+
+.ser:hover{
+    transform: rotate(360deg);
+}
+ 
+.ser a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+footer#about{
+    width: 62%;
+    display: flex;
+    justify-content: space-around;
+    background: #f1f1f1;
+    margin: 5% 14%;
+    padding: 4% 5%;
+    border-radius: 20px;
+}
+
+footer#about img{
+    width: 5cm;
+    height: 5cm;
+}
+
+.about-text{
+    width: 50%;
+    margin-right: 20%;
+    line-height: 20px;
+}
+
+.about-text h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.about-text p{
+    font-size: 20px;
+    font-family: calibri;
+    line-height: 25px;
+}
+
+.about-text p a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.about-text p a:hover{
+    color: #0062ff;
+    text-decoration: underline;
+}
+
+.social-media{
+    margin: 4%;
+    text-align: center;
+}
+
+.social-media a{
+    color: var(--main-color);
+    text-decoration: none;
+    border: 2px solid var(--main-color);
+    padding: 15px;
+    border-radius: 30px;
+    margin-left: 4%;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.social-media a:hover{
+    color: aliceblue;
+    box-shadow: 0 0 20px  var(--main-color);
+    background: var(--main-color);
+}
+
+
+@media (max-width: 998px) {
+    .social-media a{
+        flex-direction: column;
+        margin-left: 1%;
+    }
+
+    .social-media{
+        margin: 10%;
+    }
+
+    #about{
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    .about-text{
+        width: 100%;
+        text-align: left;
+    }
+    .about-text h2{
+        text-align: center;
+    }
+    #about img{
+        align-self: center;
+        margin: 10%;
+    }
+}
+
+@media (max-height: 676px) {
+    .ser{
+        margin-top: 500px;
+    }
+}
+
+@media (max-height: 590px) {
+    .ser{
+        margin-top: 400px;
+    }
+}
+
+@media (max-width: 375px) {
+    .social-media a{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+}
+
+/* main section on phone */
+
+@media (max-width: 500px){
+    .song-container{
+        flex-direction: column;
+    }
+    #songs a{
+        width: 215px;
+    }
+}
+
+@media (max-width: 400px){
+    .song-container{
+        flex-direction: column;
+        margin: 70px 10%;
+    }
+    #songs a{
+        width: 215px;
+    }
+}
+
+@media (max-width: 296px){
+    .song-container{
+        flex-direction: column;
+        margin: 70px 0%;
+    }
+    #songs a{
+        width: 215px;
+    }
+}
+
+@media (max-width: 900px){
+    .song-container{
+        margin: 70px 0%;
+    }
+    #songs a{
+        width: 215px;
+    }
+}
