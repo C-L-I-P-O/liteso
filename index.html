@@ -6,28 +6,29 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="script.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Lyricus</title>
 </head>
 <body>
     <header>
         <h3 class="logo">Lyric<span>u</span>s</h3>
         <div class="navbar">
-            <a href="#top">Home </a>
-            <a href="#about"><span></span>About</a>
+            <a href="#top"><i class='bx bx-home-alt-2' ></i>Home </a>
+            <a href="#about"><i class='bx bx-info-circle' ></i></i>About</a>
         </div>
     </header>
     <main>
         <div id="top"></div>
-        <a href="#top"><button class="ser"> &#10050; </button></a>
+        <a href="#top"><button class="ser"> <i class='bx bx-chevron-up' ></i> </button></a>
         <div class="head-section">
             <h1>Lyric<span>u</span>s</h1>
             <div class="search-bar">
                 <input type="text" id="search" placeholder="Search a Song" onkeyup="showAnswer()" title="Type in a name">
-                <button onclick="showAnswer()"> &#10050; </button>
+                <button onclick="showAnswer()"> <i class='bx bx-search'></i> </button>
             </div>
         </div>
         <div class="song-container">
-            <dl id="songs" >
+        <ol id="songs" >
             <li><a href="/songs page/song.html" target="_blank"> Kotha Raja </a></li> 
             <li><a href="/songs page/song.html" target="_blank"> Middle of night </a></li> 
             <li><a href="/songs page/song.html" target="_blank"> Arcade </a></li> 
@@ -56,8 +57,6 @@
             <li><a href="/songs page/sambar.pdf" target="_blank">Sambar </a></li>                                 
             <li><a href="/songs page/song.html" target="_blank">Moon Light </a></li>                              
             <li><a href="/songs page/song.html" target="_blank">Kalbum Katti </a></li>
-        </dl>
-        <dl id="songs" >
             <li><a href="/songs page/song.html" target="_blank">La vida</a></li> 
             <li><a href="/songs page/song.html" target="_blank">Pottan</a></li> 
             <li><a href="/songs page/song.html" target="_blank">Kayi</a></li> 
@@ -86,8 +85,6 @@
             <li><a href="/songs page/sambar.pdf" target="_blank"></a></li>                                 
             <li><a href="/songs page/song.html" target="_blank"></a></li>                              
             <li><a href="/songs page/song.html" target="_blank"></a></li>
-        </dl>
-        <dl id="songs" >
             <li><a href="/songs page/song.html" target="_blank">Prema Kath</a></li> 
             <li><a href="/songs page/song.html" target="_blank">Ya Rabbe</a></li> 
             <li><a href="/songs page/song.html" target="_blank">Qalbinte theerath</a></li> 
@@ -116,7 +113,7 @@
             <li><a href="/songs page/sambar.pdf" target="_blank"></a></li>                                 
             <li><a href="/songs page/song.html" target="_blank"></a></li>                              
             <li><a href="/songs page/song.html" target="_blank"></a></li>
-        </dl>
+        </ol>
         </div>
         
     </main>
@@ -127,38 +124,18 @@
             <p>Iam clipo and Iam  a web devoloper, an Artist, and also a youtuber.
                 I create various types of websites .If you want to see my creations visit my official website
                 <a href="https://clipo.com">www.clipo.com</a>. Also visit my youtube channel 
-                <a href="https://youtube.com/c.l.i.p.o">c.l.i.p.o</a>. 
+                <a href="https://www.youtube.com/@C.L.I.P.O">c.l.i.p.o</a>. 
                 I create Art and programming contents in my channel.
             </p>
         </div>
     </footer>
     <div class="social-media">
-        <a href="#"> &CircleDot;</a>
-        <a href="#"> &CircleDot;</a>
-        <a href="#"> &CircleDot;</a>
-        <a href="#"> &CircleDot;</a>    
-        <a href="#"> &CircleDot;</a>    
+        <a href="https://www.youtube.com/@C.L.I.P.O" target="_blank"> <i class='bx bxl-youtube' ></i></a>
+        <a href="https://github.com/ClipoDesigns" target="_blank"> <i class='bx bxl-github'></i></a>    
+        <a href="https://dev.to/clipo" target="_blank"> <i class='bx bxl-dev-to' ></i></a>
+        <a href="https://www.instagram.com/c.l.i.p.o" target="_blank"> <i class='bx bxl-instagram-alt' ></i></a>
+        <a href="https://www.reddit.com/user/c-l-i-p-o/" target="_blank"> <i class='bx bxl-reddit'></i></a>    
     </div>
-    <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyC_vuERAsSzHT8cqizITpUcgwAu69ZlwjA",
-    authDomain: "shahan-1.firebaseapp.com",
-    databaseURL: "https://shahan-1-default-rtdb.firebaseio.com",
-    projectId: "shahan-1",
-    storageBucket: "shahan-1.appspot.com",
-    messagingSenderId: "1044287884053",
-    appId: "1:1044287884053:web:cdd12d74a117c7c6f0b71c"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-</script>
 </body>
 <script src="script.js"></script>
 </html>
