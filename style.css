@@ -39,9 +39,6 @@ header{
     font-size: 170%;
 }
 
-.logo span{
-    color: var(--main-color);
-}
 .navbar{
     display: flex;
     margin: 40px 15% 0 0;
@@ -51,6 +48,8 @@ header{
 }
 
 .navbar a{
+    display: flex;
+    align-items: center;
     color: var(--text-color);
     font-size: 170%;
     font-family: calibri;
@@ -98,6 +97,13 @@ div#top{
     color: var(--main-color);
 }
 
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 .search-bar input{
     color: var(--text-color);
     width: 30%;
@@ -109,11 +115,10 @@ div#top{
     background: var(--second-bg-color);
     border: none;
     border-radius: 30px;
-    margin-top: 3%;
     min-width: 200px;
     position: relative;
     border-top-right-radius: 0;
-    border-bottom-right-radius: 0;/
+    border-bottom-right-radius: 0;
 }
 
 .search-bar input::placeholder{
@@ -132,16 +137,14 @@ div#top{
 .search-bar button{
     width: 5%;
     min-width: 50px;
-    padding: 10px;
-    padding-top: 6px;
-    font-size: 25px;
+    /* display: flex; */
+    padding: 7px 0 5px 0;
+    font-size: 30px;
     outline: none;
     border: none;
     border-radius: 30px;
-    margin-top: 3%;
     background: var(--main-color);
     transition: all 0.3s;
-    position: relative;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
@@ -154,21 +157,20 @@ div#top{
     transform: none;
 }
 
-
 /* main section starts here */
 
-
 .song-container{
-    display: flex;
-    width: 60%;
-    margin: 70px 23%;
+    width: 80%;
+    margin: 70px 10%;
 }
 
-#songs{
-    display: block;
+#songs {
+    display: grid;
     gap: 20px;
     text-align: center;
     list-style-type: none;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    justify-items: center;
 }
 
 #songs a{
@@ -202,11 +204,11 @@ div#top{
     position: fixed;
     background: var(--main-color);
     border: none;
-    font-size: 30px;
-    padding: 10px 15px;
+    font-size: 50px;
+    padding: 0px 5px;
     border-radius: 10px;
-    margin-top: 600px;
-    margin-left: 83%;
+    bottom: 50px;
+    right: 50px;
     transition: all 0.3s;
 }
 
@@ -218,6 +220,7 @@ div#top{
     color: var(--text-color);
     text-decoration: none;
 }
+
 footer#about{
     width: 62%;
     display: flex;
@@ -262,18 +265,24 @@ footer#about img{
 }
 
 .social-media{
-    margin: 4%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4% 0;
+    gap: 30px;
 }
 
 .social-media a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--main-color);
     text-decoration: none;
     border: 2px solid var(--main-color);
-    padding: 15px;
     border-radius: 30px;
-    margin-left: 4%;
-    font-size: 20px;
+    font-size: 40px;
     transition: all 0.3s;
 }
 
@@ -282,7 +291,6 @@ footer#about img{
     box-shadow: 0 0 20px  var(--main-color);
     background: var(--main-color);
 }
-
 
 @media (max-width: 998px) {
     .social-media a{
@@ -309,64 +317,5 @@ footer#about img{
     #about img{
         align-self: center;
         margin: 10%;
-    }
-}
-
-@media (max-height: 676px) {
-    .ser{
-        margin-top: 500px;
-    }
-}
-
-@media (max-height: 590px) {
-    .ser{
-        margin-top: 400px;
-    }
-}
-
-@media (max-width: 375px) {
-    .social-media a{
-        flex-direction: column;
-        margin-top: 30px;
-    }
-}
-
-/* main section on phone */
-
-@media (max-width: 500px){
-    .song-container{
-        flex-direction: column;
-    }
-    #songs a{
-        width: 215px;
-    }
-}
-
-@media (max-width: 400px){
-    .song-container{
-        flex-direction: column;
-        margin: 70px 10%;
-    }
-    #songs a{
-        width: 215px;
-    }
-}
-
-@media (max-width: 296px){
-    .song-container{
-        flex-direction: column;
-        margin: 70px 0%;
-    }
-    #songs a{
-        width: 215px;
-    }
-}
-
-@media (max-width: 900px){
-    .song-container{
-        margin: 70px 0%;
-    }
-    #songs a{
-        width: 215px;
     }
 }
